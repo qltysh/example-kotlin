@@ -31,6 +31,13 @@ jobs:
             ./gradlew build
             ./gradlew test
 
+      - name: Debug qlty-coverage
+        run: |
+            echo $GITHUB_SHA
+            curl --fail --location https://qlty-releases.s3.amazonaws.com/qlty-coverage/latest/qlty-coverage-x86_64-unknown-linux-gnu.tar.xz > qlty-coverage
+            chmod +x qlty-coverage
+            QLTY_COVERAGE_TOKEN=ec1eb8f8-bb9a-4364-8c43-d30ee030f467 QLTY_PROJECT_ID=ec1eb8f8-bb9a-4364-8c43-d30ee030f467 ./qlty-coverage --verbose --upload build/reports/jacoco/test/jacocoTestReport.xml
+
       - uses: qltyai/qlty-action/coverage@main
         with:
           coverage-token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
