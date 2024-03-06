@@ -1,4 +1,4 @@
-# Qlty Rust Coverage Example
+# Qlty Kotlin Coverage Example
 
 [Qlty](https://example.com) is a Code Health Platform with support for code coverage.
 
