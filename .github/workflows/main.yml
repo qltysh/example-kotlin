@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - run: env
+
       - name: Checkout repo
         uses: actions/checkout@v3
 
