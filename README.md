@@ -12,8 +12,11 @@ This repository uses [jacoco](https://github.com/jacoco/jacoco) to generate an x
 - Kotlin 1.9.x or above
 - Jacoco v0.8.0 or above
 - Test run with [gradle test](https://docs.gradle.org/current/userguide/java_testing.html#sec:test_execution) or via your IDE
-- An account on Qlty (free for open source)
-- `QLTY_COVERAGE_TOKEN` is set as a GitHub Actions [repository secret](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository)
+- An account on [Qlty Cloud](https://qlty.sh) (free)
+
+> [!NOTE]
+>
+> This repository is using GitHub's OpenID Connect (OIDC) to authenticate the coverage upload with Qlty Cloud instead of storing a coverage token as a GitHub Actions secret.
 
 ## Set up
 
