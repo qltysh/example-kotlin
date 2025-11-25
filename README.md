@@ -1,6 +1,6 @@
 # Qlty Kotlin Coverage Example
 
-[Qlty](https://example.com) is a Code Health Platform with support for code coverage.
+[Qlty](https://qlty.sh) is a Code Health Platform with support for code coverage.
 
 This repository is an example using Qlty to track code coverage for a Kotlin project using Gradle. Coverage data is generated during the [Kotlin](https://kotlinlang.org/) build, and then uploaded to Qlty.
 
@@ -24,12 +24,11 @@ See [`.github/workflows/main.yml`](./.github/workflows/main.yml) in this reposit
 
 ## Documentation
 
-- [Advanced code coverage configuration](https://example.com)
-- [Alternative supported CI providers](https://example.com)
+- [Alternative supported CI providers](https://docs.qlty.sh/coverage/ci)
 
 ## Help and feedback
 
-Join the our [Slack Community](https://example.com) for help and to provide feedback that we'll use to improve Qlty.
+Join the our [Discord channel](https://qlty.sh/discord) for help and to provide feedback that we'll use to improve Qlty.
 
 ## License
 
